@@ -14,7 +14,7 @@ To install NeverStop, simply clone this repository and follow the instructions i
 
 **Usage**
 
-Once NeverStop is installed, you can start using it to create your e-commerce business. To access the admin panel, go to `http://localhost:8000/admin/login`.
+Once NeverStop is installed, you can start using it to create your e-commerce business. To access the admin panel, go to `http://localhost:8000/admin/`.
 
 **Support**
 
