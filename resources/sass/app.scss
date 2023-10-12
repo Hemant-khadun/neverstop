@@ -1,0 +1,200 @@
+/**
+ * This injects Tailwind's base styles, which is a combination of
+ * Normalize.css and some additional base styles.
+ *
+ * You can see the styles here:
+ * https://unpkg.com/tailwindcss/dist/base.css
+ */
+ @tailwind base;
+
+ /**
+  * Remove the default box-shadow for invalid elements to prevent
+  * inputs in Livewire components showing with a
+  * red border by default in Firefox.
+  *
+  * See: https://github.com/laravel-frontend-presets/tall/issues/7
+  */
+  input:invalid, textarea:invalid, select:invalid {
+     box-shadow: none;
+ }
+ 
+ /**
+  * This injects any component classes registered by plugins.
+  */
+ @tailwind components;
+ 
+ /**
+  * Here you would add any of your custom component classes; stuff that you'd
+  * want loaded *before* the utilities so that the utilities could still
+  * override them.
+  *
+  * Example:
+  *
+  * .btn { ... }
+  * .form-input { ... }
+  */
+ 
+ /**
+  * This injects all of Tailwind's utility classes, generated based on your
+  * config file.
+  */
+ @tailwind utilities;
+ 
+ /**
+  * Here you would add any custom utilities you need that don't come out of the
+  * box with Tailwind.
+  *
+  * Example :
+  *
+  * .bg-pattern-graph-paper { ... }
+  * .skew-45 { ... }
+  */
+ 
+ [x-cloak] {
+     display: none;
+ }
+ 
+ /* SF Pro Text - Black */
+ @font-face {
+     font-family: 'SFProText-Black';
+     src: url('/fonts/SF-Pro-Text-Black.otf') format('opentype');
+     font-weight: 900;
+     font-style: normal;
+ }
+ 
+ /* SF Pro Text - Black Italic */
+ @font-face {
+     font-family: 'SFProText-BlackItalic';
+     src: url('/fonts/SF-Pro-Text-BlackItalic.otf') format('opentype');
+     font-weight: 900;
+     font-style: italic;
+ }
+ 
+ /* SF Pro Text - Bold */
+ @font-face {
+     font-family: 'SFProText-Bold';
+     src: url('/fonts/SF-Pro-Text-Bold.otf') format('opentype');
+     font-weight: 700;
+     font-style: normal;
+ }
+ 
+ /* SF Pro Text - Bold Italic */
+ @font-face {
+     font-family: 'SFProText-BoldItalic';
+     src: url('/fonts/SF-Pro-Text-BoldItalic.otf') format('opentype');
+     font-weight: 700;
+     font-style: italic;
+ }
+ 
+ /* SF Pro Text - Heavy */
+ @font-face {
+     font-family: 'SFProText-Heavy';
+     src: url('/fonts/SF-Pro-Text-Heavy.otf') format('opentype');
+     font-weight: 800;
+     font-style: normal;
+ }
+ 
+ /* SF Pro Text - Heavy Italic */
+ @font-face {
+     font-family: 'SFProText-HeavyItalic';
+     src: url('/fonts/SF-Pro-Text-HeavyItalic.otf') format('opentype');
+     font-weight: 800;
+     font-style: italic;
+ }
+ 
+ /* SF Pro Text - Light */
+ @font-face {
+     font-family: 'SFProText-Light';
+     src: url('/fonts/SF-Pro-Text-Light.otf') format('opentype');
+     font-weight: 300;
+     font-style: normal;
+ }
+ 
+ /* SF Pro Text - Light Italic */
+ @font-face {
+     font-family: 'SFProText-LightItalic';
+     src: url('/fonts/SF-Pro-Text-LightItalic.otf') format('opentype');
+     font-weight: 300;
+     font-style: italic;
+ }
+ 
+ /* SF Pro Text - Medium */
+ @font-face {
+     font-family: 'SFProText-Medium';
+     src: url('/fonts/SF-Pro-Text-Medium.otf') format('opentype');
+     font-weight: 500;
+     font-style: normal;
+ }
+ 
+ /* SF Pro Text - Medium Italic */
+ @font-face {
+     font-family: 'SFProText-MediumItalic';
+     src: url('/fonts/SF-Pro-Text-MediumItalic.otf') format('opentype');
+     font-weight: 500;
+     font-style: italic;
+ }
+ 
+ /* SF Pro Text - Regular */
+ @font-face {
+     font-family: 'SFProText-Regular';
+     src: url('/fonts/SF-Pro-Text-Regular.otf') format('opentype');
+     font-weight: normal;
+     font-style: normal;
+ }
+ 
+ /* SF Pro Text - Regular Italic */
+ @font-face {
+     font-family: 'SFProText-RegularItalic';
+     src: url('/fonts/SF-Pro-Text-RegularItalic.otf') format('opentype');
+     font-weight: normal;
+     font-style: italic;
+ }
+ 
+ /* SF Pro Text - Semibold */
+ @font-face {
+     font-family: 'SFProText-Semibold';
+     src: url('/fonts/SF-Pro-Text-Semibold.otf') format('opentype');
+     font-weight: 600;
+     font-style: normal;
+ }
+ 
+ /* SF Pro Text - Semibold Italic */
+ @font-face {
+     font-family: 'SFProText-SemiboldItalic';
+     src: url('/fonts/SF-Pro-Text-SemiboldItalic.otf') format('opentype');
+     font-weight: 600;
+     font-style: italic;
+ }
+ 
+ /* SF Pro Text - Thin */
+ @font-face {
+     font-family: 'SFProText-Thin';
+     src: url('/fonts/SF-Pro-Text-Thin.otf') format('opentype');
+     font-weight: 200;
+     font-style: normal;
+ }
+ 
+ /* SF Pro Text - Thin Italic */
+ @font-face {
+     font-family: 'SFProText-ThinItalic';
+     src: url('/fonts/SF-Pro-Text-ThinItalic.otf') format('opentype');
+     font-weight: 200;
+     font-style: italic;
+ }
+ 
+ /* SF Pro Text - Ultralight */
+ @font-face {
+     font-family: 'SFProText-Ultralight';
+     src: url('/fonts/SF-Pro-Text-Ultralight.otf') format('opentype');
+     font-weight: 100;
+     font-style: normal;
+ }
+ 
+ /* SF Pro Text - Ultralight Italic */
+ @font-face {
+     font-family: 'SFProText-UltralightItalic';
+     src: url('/fonts/SF-Pro-Text-UltralightItalic.otf') format('opentype');
+     font-weight: 100;
+     font-style: italic;
+ }
+ 
